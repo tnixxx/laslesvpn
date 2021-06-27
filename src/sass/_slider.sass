@@ -1,0 +1,49 @@
+.slick
+    &-dots 
+        padding: 0
+        margin-top: 50px
+        display: flex
+        justify-content: space-between
+        max-width: 135px
+        list-style-type: none
+        & button
+            width: 15px
+            height: 15px
+            font-size: 0
+            border: 0
+            border-radius: 50%
+            transition: 0.3s
+            &:focus
+                background-color: $main
+            &:hover
+                background: $main
+        // &:focus
+        //     background-color: $main !important
+        // &:active
+        //     background-color: $main !important
+        // &:hover
+        //     background-color: $main !important
+.dots
+    margin: 0
+    width: 100%
+    max-width: 135px !important
+    padding: 0
+.navigation
+    display: flex
+    align-items: center
+    justify-content: space-between
+.arrow
+    border: 2px solid $main
+    border-radius: 50%
+    width: 60px
+    height: 60px
+    background-color: white
+    transition: 0.2s
+    &:first-child
+        margin-right: 20px
+    &s
+        margin-top: 60px
+    &:hover
+        background-color: $main 
+        path
+            fill: white

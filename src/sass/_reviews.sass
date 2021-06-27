@@ -1,0 +1,40 @@
+.reviews
+    margin-top: 50px
+    &__list
+        margin-top: 60px
+        display: flex
+        justify-content: space-between
+        // flex-direction: column
+        &-item
+            padding: 30px
+            width: 100%
+            max-width: 450px
+            border: 2px solid #DDDDDD
+            border-radius: 15px
+            transition: 0.3s
+            margin-right: 20px
+            height: 230px
+            &:last-child
+                margin-right: 0px
+            &:hover
+                border-color: $main
+            &-header
+                display: flex
+                align-items: center
+                justify-content: space-between
+                &-about
+                    display: flex
+                    align-items: center
+                    &-info
+                        margin-left: 20px
+                        &-name
+                            font-weight: bold
+                            font-size: 18px
+                            margin-bottom: 1px
+                        &-location
+                            color: $gray
+                            font-size: 14px
+                &-rating
+                    display: flex
+                    &-text
+                        margin-right: 10px
