@@ -3,8 +3,8 @@
     display: flex
     justify-content: space-between
     align-items: center
-    &__container
-        &-link
+    &-container
+        &__link
             margin-right: 40px
             &:last-child
                 margin-right: 0px
@@ -28,3 +28,13 @@
     &:hover
         background-color: $main
         color: white
+@media (max-width: 992px)
+    .header
+        &-container
+            display: none
+        &__buttons
+            display: none
+// @media (max-width: 576px)
+//     .header
+//         &__buttons
+//             display: none

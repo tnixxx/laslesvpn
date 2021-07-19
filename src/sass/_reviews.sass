@@ -1,11 +1,10 @@
 .reviews
     margin-top: 50px
-    &__list
+    &-list
         margin-top: 60px
         display: flex
-        justify-content: space-between
         // flex-direction: column
-        &-item
+        &__item
             padding: 30px
             width: 100%
             max-width: 450px
@@ -24,7 +23,7 @@
                 justify-content: space-between
                 &-about
                     display: flex
-                    align-items: center
+                    align-items: end
                     &-info
                         margin-left: 20px
                         &-name
@@ -34,7 +33,25 @@
                         &-location
                             color: $gray
                             font-size: 14px
+                    &__img
+                        display: none
                 &-rating
                     display: flex
                     &-text
                         margin-right: 10px
+@media (max-width: 504px)
+    .reviews
+        &-list
+            &__item
+                padding: 13px
+                &-header
+                    &-about
+                        &__img
+                            display: none !important
+                        &-info
+                            margin-left: 0px 
+                            &-location
+                                margin-bottom: 3px
+                &-block
+                    &-text
+                        font-size: 14px

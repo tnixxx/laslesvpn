@@ -3,10 +3,10 @@
     &-title
     &-subtitle
         margin-bottom: 60px
-    &__list
+    &-list
         display: flex
-        justify-content: space-between
-        &-item
+        justify-content: center
+        &__item
             padding-top: 80px
             padding-bottom: 40px
             max-width: 330px
@@ -18,10 +18,11 @@
             flex-direction: column
             align-items: center
             transition: 0.4s
+            margin-right: 30px
             &:hover
                 border: 1ps solid
                 border-color: $main
-                .plan__list-item-button
+                .plan-list__item-button
                     background: $main
                     color: white
             &-text
@@ -32,7 +33,7 @@
                 font-weight: bold
             &-ul
                 list-style-type: none
-                &-li
+                &__li
                     display: flex
                     &::before
                         padding-right: 20px
@@ -45,3 +46,16 @@
                 background-color: white
                 border: 2px solid $main
                 border-radius: 50px
+                
+@media (max-width: 1120px)
+    .plan
+        &-list
+            flex-wrap: wrap
+            align-items: center
+            &__item
+                margin-bottom: 30px
+@media (max-width: 689px)
+    .plan
+        &-list
+            &__item
+                margin-right: 0px
